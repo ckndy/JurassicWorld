@@ -15,6 +15,7 @@ public class DinosaurTest {
     // velociraptor2 = new Velociraptor("Delta");
     // velociraptor3 = new Velociraptor("Echo");
     // velociraptor4 = new Velociraptor("Charlie");
+    pterodactyl = new Pterodactyl();
   }
 
   @Test
@@ -41,7 +42,7 @@ public class DinosaurTest {
 
   @Test
   public void canEat() {
-    assertEquals(5, velociraptor.getFoodLevel());
+    assertEquals(5, velociraptor.getHungerLevel());
   }
 }
 
