@@ -23,8 +23,8 @@ public class DinosaurTest {
   }
 
   @Test
-  public void getFoodLevel() {
-    assertEquals(5, velociraptor.getFoodLevel());
+  public void getHungerLevel() {
+    assertEquals(5, velociraptor.getHungerLevel());
   }
 
   @Test
@@ -34,9 +34,9 @@ public class DinosaurTest {
   }
 
   @Test
-  public void setFoodLevel() {
-    velociraptor.setFoodLevel(4);
-    assertEquals(4, velociraptor.getFoodLevel());
+  public void setHungerLevel() {
+    velociraptor.setHungerLevel(4);
+    assertEquals(4, velociraptor.getHungerLevel());
   }
 
   @Test

@@ -7,6 +7,7 @@ public class EnclosureTest {
 
   Tyrannosaurus tyrannosaurus;
   Velociraptor velociraptor;
+  
   Paddock9 paddock9;
   RaptorPaddock raptorPaddock;
   

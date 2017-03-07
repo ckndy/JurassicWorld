@@ -4,12 +4,12 @@ public abstract class Dinosaur {
 
   String name;
   DinosaurType type;
-  int foodLevel;
+  int hungerLevel;
   
   public Dinosaur(String name) {
     this.name = name;
     this.type = type;
-    this.foodLevel = 10;
+    this.hungerLevel = 50;
   }
 
   public String getName() {
@@ -28,22 +28,22 @@ public abstract class Dinosaur {
     this.name = name;
   }
 
-  public void setFoodLevel(int foodLevel) {
-    this.foodLevel = foodLevel;
+  public void setHungerLevel(int hungerLevel) {
+    this.hungerLevel = hungerLevel;
   }
 
   public void eat() {
-    setFoodLevel(100);
+    setHungerLevel(100);
   }
 
   public String checkFood() {
-    if (this.foodLevel > 100) {
-      this.foodLevel = 100;
+    if (this.hungerLevel > 100) {
+      this.hungerLevel = 100;
       return "NOT HUNGRY!";
     }
 
-    else if (this.foodLevel < 50) {
-      this.foodLevel = 0;
+    else if (this.hungerLevel < 50) {
+      this.hungerLevel = 0;
       return "HUNGRY!";
     }
 
