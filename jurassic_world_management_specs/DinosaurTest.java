@@ -6,6 +6,8 @@ public class DinosaurTest {
 
   Tyrannosaurus tyrannosaurus;
   Velociraptor velociraptor;
+
+  Pterodactyl pterodactyl;
   
   @Before
   public void before() {
@@ -25,7 +27,7 @@ public class DinosaurTest {
 
   @Test
   public void getHungerLevel() {
-    assertEquals(5, velociraptor.getHungerLevel());
+    assertEquals(50, velociraptor.getHungerLevel());
   }
 
   @Test
@@ -36,13 +38,13 @@ public class DinosaurTest {
 
   @Test
   public void setHungerLevel() {
-    velociraptor.setHungerLevel(4);
-    assertEquals(4, velociraptor.getHungerLevel());
+    velociraptor.setHungerLevel(0);
+    assertEquals(0, velociraptor.getHungerLevel());
   }
 
   @Test
   public void canEat() {
-    assertEquals(5, velociraptor.getHungerLevel());
+    assertEquals(50, velociraptor.getHungerLevel());
   }
 }
 

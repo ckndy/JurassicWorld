@@ -8,8 +8,10 @@ public class ParkTest {
   Park park;
   Tyrannosaurus tyrannosaurus;
   Velociraptor velociraptor;
+  Pterodactyl pterodactyl;
   Paddock9 paddock9;
   RaptorPaddock raptorpaddock;
+  Aviary aviary;
   
   @Before
   public void before() {
@@ -17,11 +19,14 @@ public class ParkTest {
     park = new Park("Jurassic World");
     paddock9 = new Paddock9("Paddock 9");
     raptorpaddock = new RaptorPaddock("Raptor Paddock");
+    aviary = new Aviary("The Aviary");
     tyrannosaurus = new Tyrannosaurus();
     velociraptor = new Velociraptor("Blue");
     // velociraptor2 = new Velociraptor("Delta");
     // velociraptor3 = new Velociraptor("Echo");
     // velociraptor4 = new Velociraptor("Charlie");
+    pterodactyl = new Pterodactyl();
+
   }
 
   @Test
@@ -95,6 +100,6 @@ public class ParkTest {
   //   park.calculateVisitorsAndFunds();
   //   assertEquals(13000, park.getVisitorNumbers());
   //   assertEquals(130000, park.getFunds());
-  }
+  
 }
 
