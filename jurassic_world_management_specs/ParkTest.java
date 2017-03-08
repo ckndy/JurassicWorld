@@ -17,15 +17,19 @@ public class ParkTest {
   public void before() {
 
     park = new Park("Jurassic World");
+
     paddock9 = new Paddock9("Paddock 9");
     raptorpaddock = new RaptorPaddock("Raptor Paddock");
     aviary = new Aviary("The Aviary");
-    tyrannosaurus = new Tyrannosaurus();
+
+    tyrannosaurus = new Tyrannosaurus("Alan");
+    
     velociraptor = new Velociraptor("Blue");
-    // velociraptor2 = new Velociraptor("Delta");
-    // velociraptor3 = new Velociraptor("Echo");
-    // velociraptor4 = new Velociraptor("Charlie");
-    pterodactyl = new Pterodactyl();
+    velociraptor = new Velociraptor("Delta");
+    velociraptor = new Velociraptor("Echo");
+    velociraptor = new Velociraptor("Charlie");
+
+    pterodactyl = new Pterodactyl("Steve");
 
   }
 
@@ -52,7 +56,7 @@ public class ParkTest {
   @Test
   public void canAddAssetsOutOfContainment() {
     park.addAssetsOutOfContainment(velociraptor);
-    assertEquals(4, park.getAssetsOutOfContainment());
+    assertEquals(1, park.getAssetsOutOfContainment());
   }
 
   @Test
@@ -64,18 +68,18 @@ public class ParkTest {
 
   @Test
   public void canAddEnclosure() {
-    park.addEnclosure();
-    assertEquals(2, park.getNumOfEnclosures());
-    assertEquals(park.getEnclosureName());
+    park.addEnclosure(raptorpaddock);
+    assertEquals(1, park.getNumOfEnclosures());
+    // assertEquals(park.getEnclosureName());
   }
 
-  @Test
-  public void canAddDinosaurToEnclosure() {
-    park.addEnclosure();
-    paddock9.addDinosaur(tyrannosaurus);
-    assertEquals(park.getEnclosureName());
+  // @Test
+  // public void canAddDinosaurToEnclosure() {
+  //   park.addEnclosure(paddock9);
+  //   paddock9.addDinosaur(tyrannosaurus);
+  //   assertEquals( "", park.getEnclosureName());
     
-  }
+  // }
 
   // @Test
   // public void canGetVisitors() {

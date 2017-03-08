@@ -20,8 +20,8 @@ public abstract class Dinosaur {
     return this.type.toString();
   } 
 
-  public int getFoodLevel() {
-    return this.foodLevel;
+  public int getHungerLevel() {
+    return this.hungerLevel;
   }
 
   public void setName(String name) {

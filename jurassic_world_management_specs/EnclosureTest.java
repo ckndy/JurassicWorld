@@ -16,23 +16,28 @@ public class EnclosureTest {
   @Before
   public void before() {
 
-    tyrannosaurus = new Tyrannosaurus();
-    velociraptor = new Velociraptor();
-    pterodactyl = new Pterodactyl();
+    tyrannosaurus = new Tyrannosaurus("Alan");
 
-    paddock9 = new Paddock9();
-    raptorPaddock = new RaptorPaddock();
-    aviary = new Aviary();
+    velociraptor = new Velociraptor("Blue");
+    velociraptor = new Velociraptor("Delta");
+    velociraptor = new Velociraptor("Echo");
+    velociraptor = new Velociraptor("Charlie");
+
+    pterodactyl = new Pterodactyl("Steve");
+
+    paddock9 = new Paddock9("T-Rex Paddock");
+    raptorPaddock = new RaptorPaddock("Raptor Paddock");
+    aviary = new Aviary("Dactyl Cage");
   }
 
   @Test
   public void getEnclosureName() {
-    assertEquals("RaptorPaddock", raptorpaddock.getName());
+    assertEquals("Raptor Paddock", raptorPaddock.getName());
   }
 
   @Test
   public void addCarnivore() {
-   raptorpaddock.addDinosaur(velociraptor); 
+   raptorPaddock.addDinosaur(velociraptor); 
  }
 }
 

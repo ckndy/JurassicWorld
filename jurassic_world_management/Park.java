@@ -33,7 +33,7 @@ public class Park {
     return assetsOutOfContainment.size();
   }
 
-  public int getEnclosures() {
+  public int getNumOfEnclosures() {
     return enclosures.size();
   }
 
@@ -55,6 +55,14 @@ public class Park {
 
   public void removeEnclosure(Enclosure enclosure) {
     enclosures.remove(enclosure);
+  }
+
+  public void addAssetsOutOfContainment(Dinosaur dinosaur) {
+    assetsOutOfContainment.add(dinosaur);
+  }
+
+  public void removeAssetsOutOfContainment(Dinosaur dinosaur) {
+    assetsOutOfContainment.remove(dinosaur);
   }
 }
 
